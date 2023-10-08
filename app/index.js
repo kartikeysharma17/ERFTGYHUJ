@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const index = () => {
   const [show, setShow] = useState(true);
@@ -54,7 +54,80 @@ const index = () => {
             <img className="sm:ml-28" src="rsticker.png" alt="" />
           </div>
         </div>
-        {/* <div
+
+
+
+        
+<div class="h-screen bg-gradient-to-br from-pink-50 to-indigo-100 grid place-items-center">
+    <div class="w-6/12 mx-auto rounded border">
+    <div class="bg-white p-10 shadow-sm">
+        <h3 class="text-lg font-medium text-gray-800">Several Windows stacked on each other</h3>
+        <p class="text-sm font-light text-gray-600 my-3">
+        The accordion is a graphical control element comprising a vertically stacked list of items such as labels or thumbnails
+        </p>
+
+        <div class="h-1 w-full mx-auto border-b my-5"></div>
+
+        <div class="transition hover:bg-indigo-50">
+        <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <i class="fas fa-plus"></i>
+            <h3>What is term?</h3>
+        </div>
+        <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+            <p class="leading-6 font-light pl-9 text-justify">
+            Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put
+            far daughter.
+            </p>
+            <button class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn more</button>
+        </div>
+        </div>
+
+        <div class="transition hover:bg-indigo-50">
+        <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <i class="fas fa-plus"></i>
+            <h3>When to use Accordion Components?</h3>
+        </div>
+        <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+            <p class="leading-6 font-light pl-9 text-justify">
+            Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put
+            far daughter.
+            </p>
+            <button class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn more</button>
+        </div>
+        </div>
+
+        <div class="transition hover:bg-indigo-50">
+        <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <i class="fas fa-plus"></i>
+            <h3>How can it be defined?</h3>
+        </div>
+        <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+            <p class="leading-6 font-light pl-9 text-justify">
+            Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put
+            far daughter.
+            </p>
+            <button class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn more</button>
+        </div>
+        </div>
+
+        <div class="transition hover:bg-indigo-50">
+        <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <i class="fas fa-plus"></i>
+            <h3>Chamber reached do he nothing be?</h3>
+        </div>
+        <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+            <p class="leading-6 font-light pl-9 text-justify">
+            Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put
+            far daughter.
+            </p>
+            <button class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn more</button>
+        </div>
+        </div>
+    </div>
+    </div>
+<section class="mt-4 text-center">Build with ❤️ by <a href="https://github.com/saadh393" target="_blank">Saad Hasan </a></section>
+</div>
+        <div
           style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}
           className="sm:w-4/5 w-11/12 sm:text-2xl sm:p-10 p-5 relative sm:mt-32 mt-10  m-auto rounded-xl sm:rounded-3xl"
         >
@@ -74,7 +147,7 @@ const index = () => {
             </div>
           )}
           {!show && (
-            <div className="animated">
+            <div className="animated accordian-animation">
               <h2 className="sm:text-3xl text-[11px] font-medium flex relative  linear">
                 <p>01</p>
                 <p className="sm:ml-11 ml-2">
@@ -185,40 +258,8 @@ const index = () => {
               </p>
             </div>
           )}
-        </div> */}
         </div>
-        
-        <div id="faq">
-  <h1>FAQ</h1>
-  <ul className="w-[100%]">
-    <li className="sm:w-4/5 w-11/12 sm:text-2xl sm:p-10 p-5 relative sm:mt-32 mt-10  m-auto rounded-xl sm:rounded-3xl">
-      
-      <input type="checkbox" checked={!show}
-                      onClick={() => setShow(!show)}
-
- />
-      <i></i>
-      <h2 className="sm:w-4/5 w-11/12 sm:text-2xl sm:p-10 p-5 relative sm:mt-32 mt-10  m-auto rounded-xl sm:rounded-3xl">                  Build Your Own Decentrailized Apps on Ramestta
-</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae debitis iusto voluptatum doloribus rem, qui nesciunt labore tempore fugit iste deserunt incidunt error provident repudiandae laudantium quo ipsa unde perspiciatis, nihil autem distinctio! Deserunt, aspernatur.</p>
-    </li>
-    <li>
-      <input type="checkbox" checked/>
-      <i></i>
-      <h2>Hvorfor..?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi, quia provident facere recusandae itaque assumenda fuga veniam dicta earum dolorem architecto facilis nisi pariatur.</p>
-    </li>
-    <li>
-      <input type="checkbox" checked/>
-      <i></i>
-      <h2>Hvad..?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quas placeat assumenda mollitia magni consequatur dolorum, quod nihil distinctio aperiam officia alias! Voluptate dolore ex officiis sit, magnam non a, eligendi pariatur aut, earum dolores tenetur ipsam id illo deleniti. Laudantium deserunt eaque ipsam voluptatum consequuntur voluptatibus sed minima ad accusamus debitis eos similique laboriosam, molestiae? Consequatur neque tempore quis. Eligendi, in ut aspernatur esse nesciunt libero.</p>
-    </li>
-  </ul>
-</div>
-
-
-      
+      </div>
     </>
   );
 };
